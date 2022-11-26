@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <title>Anokha Tech-Fest Registration</title>
+    <link rel="icon"
+      href="https://play-lh.googleusercontent.com/Nw6kWAnggSqCPVQOXJx3IgYVfWAg6G3-Z2-v7RCreGl1kGH5mMd_zJ3jxcQJjApoYno">
+    <img src="https://www.facultyplus.com/wp-content/uploads/2018/11/Amrita-Logo.png" alt="Amrita-logo" class="center">
+  <title>Welcome To Anokha 2023 Registration Form</title>
+  
+  <style>
+    body {
+  background-image: linear-gradient(135deg, #FAB2FF 10%, #1904E5 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+}
+.box-form .left {
+  color: #FFFFFF;
+  background-size: 600px;
+  background-repeat: no-repeat;
+  background-image: url("https://dt19wmazj2dns.cloudfront.net/wp-content/themes/amrita/images/logo-colored.svg");
+  margin: 10px;
+  overflow: hidden;}
+  
+    #main{width:600px; height:auto; overflow:hidden; padding-bottom:20px; margin-left:auto; margin-right:auto; 
+    border-radius:5px; padding-left:10px; margin-top:100px; border-top:3px double #f1f1f1; 
+    border-bottom:3px double #f1f1f1; padding-top:20px;
+    }
+    
+    #main table{font-family:"Comic Sans MS", cursive;}
+    /* css code for textbox */
+    #main .tb{height:28px; width:230px; border:1px solid #0ab9e1; color:#0b0ff5; font-weight:bold; border-left:5px solid #f7f7f7; opacity:0.9;}
+    
+    #main .tb:focus{height:28px; border:1px solid #f26724; outline:none; border-left:5px solid #f7f7f7;}
+
+    /* css code for button*/
+    #main .btn{width:150px; height:32px; outline:none;  color:#f7f7f7; font-weight:bold; border:0px solid #f26724; 
+    text-shadow: 0px 0.5px 0.5px #fff; border-radius: 2px; font-weight: 600; color: #0cc462; letter-spacing: 1px; 
+    font-size:14px; background-color:#f1f1f1; -webkit-transition: 1s; -moz-transition: 1s; transition: 1s;}
+  
+    #main .btn:hover{
+	background-color:#f26724; outline:none;  border-radius: 2px; color:#f1f1f1; border:1px solid #f1f1f1;
+    -webkit-transition: 1s; -moz-transition: 1s; transition: 1s; 
+	}
+  </style>
+  <script>
+	function instruct()
+	{
+	 document.getElementById("instructions").innerHTML = "HELLO! JUST FILL THE FOLLOWING FORM TO PARTICIPATE IN ANOKHA FEST 2023.";
+	}
+	</script>
+  </head>
+
+	<body>
+		<form>
+	<!-- Main div code -->
+	
+	<div id="main">
+	<div class="h-tag">
+	<h2>Register for the Anokha 2022 – 12th National Level Techfest
+	</h2>
+	</div>
+	<!-- create account div -->
+	<div class="login">
+	<table cellspacing="5" cellpadding="8" border="0">
+		<p id="instructions"></p>
+	<tr><td><button type="button" onclick="instruct()">WHAT TO DO??</button></td></tr>
+	<tr>
+	<td>Name</td>
+	<td><input type="text" placeholder="Enter your Name here" class="tb" /></td>
+	</tr>	
+	<tr>
+	<td>Gender</td>
+	<td>
+	<input type="radio" id="male" name="gen" value="Male">
+	<label for="male">Male</label>
+	<input type="radio" id="female" name="gen" value="Female">
+	<label for="female">Female</label>
+	<input type="radio" id="others" name="gen" value="Others">
+	<label for="others">Others</label></td>
+	</tr>	
+	<tr>
+	<td>Your Birthday</td>
+	<td>
+    <input type="date" id="birthday" name="birthday"></td>
+	</tr>
+	<tr>
+	<td>University Email ID :</td>
+	<td><input type="text" placeholder="Enter Email ID here" class="tb" /></td>
+	</tr>
+	<tr><td>Your Degree</td>
+		<td>  
+			<select name="degree" id="degree">
+			  <option value="btech">B-TECH</option>
+			  <option value="ba">BA</option>
+			  <option value="bse">BSE</option>
+			  <option value="intma">INT MA</option>
+			  <option value="intmsc">INT M.Sc</option>
+			  <option value="mtech">M-TECH</option>
+			  <option value="ma">MA</option>
+			  <option value="mba">MBA</option>
+			</select></td>
+		</tr>
+	<tr><td>Your Branch</td>
+	<td>  
+		<select name="branch" id="branch">
+		  <option value="aie">AIE</option>
+		  <option value="are">ARE</option>
+		  <option value="cse">CSE</option>
+		  <option value="cys">CYS</option>
+		  <option value="ece">ECE</option>
+		  <option value="elc">ELC</option>
+		  <option value="eee">EEE</option>
+		  <option value="mech">MECH</option>
+		</select></td>
+	</tr>
+
+	<tr><td>Languages you are proficient with</td>
+	<td><input type="checkbox" id="lan1" name="lan1" value="python">
+	<label for="lan1">Python</label>
+	<input type="checkbox" id="lan2" name="lan2" value="c++">
+	<label for="lan2">C++</label>
+	<input type="checkbox" id="lan3" name="lan3" value="c">
+	<label for="lan3">C</label></td>
+	</tr>
+	<tr>
+	<td>Tell us more</td>
+	<td>
+	<textarea id="intro" name="intro" rows="4" cols="50"> Introduce your technical skills briefly </textarea>
+	</td>
+	</tr>
+	<tr>
+	<td>Your Resume</td>
+	<td><input type="file" id="myFile" name="filename"></td>
+	</tr>
+	
+	<td></td>
+	<td>
+	<input id="reset" type="reset" value="Clear Form" id="res" class="btn" /></td>
+	</tr>
+	<script>
+		function myFunction() {
+		  document.getElementById("reset").reset();
+		}
+		</script>
+	<tr><td></td><td>
+		<input id="submit" type="submit" value="Submit" class="btn"></td></tr>
+	<tr>
+		<script>
+			function myFunction() {
+			  document.getElementById("submit").submit();
+			}
+			</script>
+	</table>
+	</div>
+	<!-- create account box ending here.. -->
+	</div>
+	<!-- Main div ending here... -->
+	</form>
+	</body>
+	</html>
