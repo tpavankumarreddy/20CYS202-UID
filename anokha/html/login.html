@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Anokha Tech Fest Log-in Page</title>
+  <title>Anokha Tech Fest Login</title>
   <link rel="icon"
       href="../images/fav.jpg">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -12,6 +12,7 @@
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"><link rel="stylesheet" href="./style.css">
 
 </head>
+
 <body>
 	
 <!-- partial:index.partial.html -->
@@ -37,7 +38,7 @@
 		
 		<p>Don't have an account? <a href="anokha_registration.html">Creat Your Account</a> it takes less than a minute</p>
 		<div class="inputs">
-			<input type="text" placeholder="user name">
+			<input type="email" id="email" name="email" placeholder="Email Address" required >
 			<br>
 			<input type="password" placeholder="password">
 		</div>
@@ -47,14 +48,15 @@
 		<div class="remember-me--forget-password">
 				<!-- Angular -->
 	<label>
-		<input type="checkbox" name="item" checked/>
+		<input type="checkbox" name="item" id="l" checked/>
+		
 		<span class="text-checkbox">Remember me</span>
 	</label>
 			<p>forget password?</p>
 		</div>
 			
 			<br>
-			<button><a href="../index.html">Login</a></button>
+			<button class=".box-form .right button" id="submit" type="submit" value="submit"  onclick=" window.location.href= 'anokha.html'">Login</button>
 	</div>
 	
 </div>

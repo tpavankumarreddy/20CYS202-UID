@@ -1,7 +1,7 @@
 <!DOCTYPE html>
   <html>
   <head>
-    <title>Anokha Tech-Fest Registration</title>
+    <title>Anokha Tech Fest Registration</title>
     <link rel="icon"
       href="../images/fav.jpg">
     <img src="https://www.facultyplus.com/wp-content/uploads/2018/11/Amrita-Logo.png" alt="Amrita-logo" class="center">
@@ -50,6 +50,9 @@
 
 	#main .tb2{height:28px; width:100px; border:3px solid #0ab9e1; color:#21d685; font-weight:bold; border-left:5px solid #f7f7f7; opacity:10;}
     #main .tb2:focus{height:28px; border:0px solid #f26724; outline:none; border-left:3px solid #f31212; border-radius: 5px;}
+
+	#main .tb3{height:75px; width:150px; border:3px solid #0ab9e1; color:#21d685; font-weight:bold; border-left:5px solid #f7f7f7; opacity:10;}
+    #main .tb3:focus{height:75px; border:0px solid #f26724; outline:none; border-left:3px solid #f31212; border-radius: 5px;}
 
 
     #main .tb:focus{height:28px; border:0px solid #f26724; outline:none; border-left:3px solid #f31212; border-radius: 5px;}
@@ -135,12 +138,85 @@ input:checked + .slider:before {
   margin-bottom: 20px;
 
 }
+.box {
+  width: 20%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid orange;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: orange;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+.popup .close:hover {
+  color: black;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
   </style>
   <script>
 	function myFunction1() {
   var x = document.getElementById("instructions");
   if (x.innerHTML === "") {
-    x.innerHTML = "HELLO! JUST FILL THE FOLLOWING FORM TO PARTICIPATE IN ANOKHA FEST 2023.";
+    x.innerHTML = "HELLO! READ THE INSTRUCTIONS GIVEN ABOVE CAREFULLY AND FILL THE FOLLOWING FORM TO PARTICIPATE IN ANOKHA FEST 2023.";
   } else {
     x.innerHTML = "";
   }
@@ -169,16 +245,32 @@ console.log("University name: " + namelocal1);
 	
 	<div id="main">
 	<div class="h-tag">
-	<h2>Register for the Anokha 2022 – 12th National Level Techfest
-	</h2>
+	<h1 style="color: #a4123f; text-align: center;" >Register for the Anokha 2022 – 12th National Level Techfest</h1>
 	</div>
-	<div class="h-tag"><a href="login.html" ><h2>Already Created account, Click Here to log-in</h2></a></div>
+	<div class="h-tag"><a href="login.html" ><h2 style="text-align: center;" >Already Created account, Click Here to log-in</h2></a></div>
 	<!-- create account div -->
 	<div class="login">
+		<div id="popup1" class="overlay">
+			<div class="popup">
+				<h3 style="color: #a4123f;">Instructions for Amritian's and Non-Amritian's</h3>
+				<a class="close" href="#">×</a>
+				<div class="content">
+					<h4 style="color: #a4123f;">For Amritian's</h4>You will get the link soon to your univercity e-mails.<br>So, You don't nedd to fill this.<br><br>
+					<h4 style="color: #a4123f;">For Non-Amritian's </h4>First, fill the below form and once you submit the form, you will get the payment link to the e-mail which you gave.<br><br>
+					<b>Note: </b> Your account will activated only when payment process is completed.
+	
+				</div>
+			</div>
+		</div>
+		<div>
+			<button class="btn" type="button" value="submit" onclick="window.location.href='#popup1'" >Instructions</button>
+		</div>
 	<table cellspacing="5" cellpadding="10" border="0" class="m">
+		<tr><td><button id="instructions" class="btn" type="button" onclick="myFunction1()">WHAT TO DO??</button></td>
+		<p id="instructions"></p><br></tr>
 		
-		<p id="instructions"></p>
-	<tr><td><button id="instructions" class="btn" type="button" onclick="myFunction1()">WHAT TO DO??</button></td></tr>
+		
+
 
 	<tr>
 	<td>Name</td>
@@ -204,6 +296,12 @@ console.log("University name: " + namelocal1);
 	<td>Email ID :</td>
 	<td><input type="text" name="email" placeholder="Enter Email ID here" class="tb" required /></td>
 	</tr>
+	<tr>
+	<td>Password </td>
+	<td><input type="text" name="password" id="password" class="tb" required placeholder="Enter password"></td></tr>
+	<tr>
+	<td>Confirm Password</td>
+	<td> <input type="password" name="cpassword" id="cpassword" class="tb" required placeholder="Confirm password"> </td></tr>
 	<tr>
 		<td>College Name</td>
 		<td><input type="text" name="Uname" placeholder="Enter your College name here" class="tb" required /></td>
@@ -249,6 +347,12 @@ console.log("University name: " + namelocal1);
 	<textarea required id="intro" name="intro" rows="4" cols="50" class="tb1" placeholder="Introduce your technical skills briefly"></textarea>
 	</td>
 	</tr>
+	<tr>
+		<td>Tell us more</td>
+		<td>
+		<textarea required id="add" name="add" rows="2" cols="50" class="tb3" placeholder="Your address"></textarea>
+		</td>
+		</tr>
 	<tr>
 	<td>Your Resume</td>
 	<td><input type="file" id="myFile_cv" name="filename" accept="image/*.,.jpg,.jpeg,.pdf"></td>
