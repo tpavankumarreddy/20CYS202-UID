@@ -1,118 +1,39 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Anokha Tech Fest</title>
-    <link rel="icon"
-      href="../images/fav.jpg">
+  <head>
+
+    <title>
+      Anokha Tech Fest
+    </title>
+
+    <link rel="icon" href="../images/fav.jpg">
+
     <img src="https://dt19wmazj2dns.cloudfront.net/wp-content/themes/amrita/images/logo-colored.svg" alt="Amrita-logo" class="center">
+      
     <meta http-equiv="refresh" content="10; url = ../index.html" />
-    </head>
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-}
+      
+    <link rel="stylesheet" href="../css/ucomming.css" media="screen">
 
-.center {
-  display: block;
-  margin-left: 525px;
-  margin-top: 50px;
-  margin-right: auto;
-  width: 30%;
-}
-body {
-  background-image: linear-gradient(135deg, #ffb2d1 10%, #1904E5 100%);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  font-family: "Open Sans", sans-serif;
-  color: #333333;
-}
+    <script class="u-script" type="text/javascript" src="../js/ucomming.js" defer=""></script>
 
+  </head>
 
-.topleft {
-  position: absolute;
-  top: 0;
-  left: 16px;
-}
-
-.bottomleft {
-  position: absolute;
-  bottom: 0;
-  left: 16px;
-}
-
-.middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-hr {
-  margin: auto;
-  width: 40%;
-}
-</style>
-
-<body>
-
+  <body>
     <div class="bgimg">
-        <div class="middle">
-          <img src="../images/1.png" style="margin-top: 250px; width: 60%;">
-          <h1 style="color: white;">COMING SOON</h1>
-          <h2 style="color: white; " >This site is under construction. </h2>
+      <div class="middle">
+        <img src="../images/1.png" style="margin-top: 250px; width: 60%;">
 
-          <h3 style="color: white;">You will be redirected to common page in 10 secconds.</h3>
-          <h3 style="color: #a4123f;"><a id="countdown"></a></h3>
-          <br>
-          <p id="demo" style="font-size:30px; font-family: 'Times New Roman', Times, serif; font-weight: 600; width: 500; height: 45px;
-          border-radius: 10px; background-color: #a4123f; opacity: 0.8; color: white;"></p>
-        </div>
+        <h1 style="color: white;">COMING SOON</h1>
+        <h2 style="color: white; " >This site is under construction. </h2>
+        <h3 style="color: white;">You will be redirected to common page in 10 secconds.</h3>
+        <h3 style="color: #a4123f;"><a id="countdown"></a></h3>
+        <br>
+                    
+        <p id="demo" style="font-size:30px; font-family: 'Times New Roman', 
+        Times, serif; font-weight: 600; width: 500; height: 45px; 
+        border-radius: 10px; background-color: #a4123f; 
+        opacity: 0.8; color: white;"></p>
       </div>
-
-<script>
-    // Set the date we're counting down to
-    var countDownDate = new Date("Mar 30, 2023 00:00:00").getTime();
-    
-    // Update the count down every 1 second
-    var countdownfunction = setInterval(function() {
-    
-      // Get todays date and time
-      var now = new Date().getTime();
-      
-      // Find the distance between now an the count down date
-      var distance = countDownDate - now;
-      
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      
-      // Output the result in an element with id="demo"
-      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-      + minutes + "m " + seconds + "s ";
-      
-      // If the count down is over, write some text 
-      if (distance < 0) {
-        clearInterval(countdownfunction);
-        document.getElementById("demo").innerHTML = "EXPIRED";
-      }
-    }, 1000);
-
-    var timeleft = 10;
-var downloadTimer = setInterval(function(){
-  if(timeleft <= 0){
-    clearInterval(downloadTimer);
-    document.getElementById("countdown").innerHTML = "Finished";
-  } else {
-    document.getElementById("countdown").innerHTML = timeleft + " seconds remaining";
-  }
-  timeleft -= 1;
-}, 1000);
-
-    </script>
-</body>
+    </div>
+  </body>
 </html>

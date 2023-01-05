@@ -1,404 +1,382 @@
 <!DOCTYPE html>
-  <html>
-  <head>
-    <title>Anokha Tech Fest Registration</title>
-    <link rel="icon"
-      href="../images/fav.jpg">
+<html>
+<head>
+
+    <title>
+		Anokha Tech Fest Registration
+	</title>
+
+    <link rel="icon" href="../images/fav.jpg">
+
     <img src="https://www.facultyplus.com/wp-content/uploads/2018/11/Amrita-Logo.png" alt="Amrita-logo" class="center">
-  <title>Welcome To Anokha 2023 Registration Form</title>
-  
-  <style>
-	img {
-		display:block;
-		margin-top: 50px;
-		margin-bottom: 0px;
-        margin-left: auto;
-        margin-right: auto;
-}
-    body {
-  background-image: linear-gradient(135deg, #ffb2d1 10%, #1904E5 100%);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  font-family: "Open Sans", sans-serif;
-  color: #333333;
-}
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 10%;
-}
-.box-form .left {
-  color: #FFFFFF;
-  background-size: 600px;
-  background-repeat: no-repeat;
-  background-image: url("https://dt19wmazj2dns.cloudfront.net/wp-content/themes/amrita/images/logo-colored.svg");
-  margin: 10px;
-  overflow: hidden;}
-  
-    #main{width:600px; height:auto; overflow:hidden; padding-bottom:20px; margin-left: 425px; margin-right: 425px; 
-    border-radius:50px; padding-left:10px; margin-top:50px; border-top:5px double #ffffff; 
-    margin-bottom: 50px; border-bottom:5px double #ffffff; padding-top:20px;
-    }
-    
-    #main table{font-family:"Comic Sans MS", cursive; color: rgb(255, 255, 255);}
-    /* css code for textbox */
-    #main .tb{height:28px; width:230px; border:3px solid #0ab9e1; color:#21d685; font-weight:bold; border-left:5px solid #f7f7f7; opacity:10;}
-	#main .tb1{height:100px; width:230px; border:3px solid #0ab9e1; color:#21d685; font-weight:bold; border-left:5px solid #f7f7f7; opacity:10;}
-    #main .tb1:focus{height:100px; border:0px solid #f26724; outline:none; border-left:3px solid #f31212; border-radius: 5px;}
 
-	#main .tb2{height:28px; width:100px; border:3px solid #0ab9e1; color:#21d685; font-weight:bold; border-left:5px solid #f7f7f7; opacity:10;}
-    #main .tb2:focus{height:28px; border:0px solid #f26724; outline:none; border-left:3px solid #f31212; border-radius: 5px;}
+	<link rel="stylesheet" href="../css/reg.css" media="screen">
 
-	#main .tb3{height:75px; width:150px; border:3px solid #0ab9e1; color:#21d685; font-weight:bold; border-left:5px solid #f7f7f7; opacity:10;}
-    #main .tb3:focus{height:75px; border:0px solid #f26724; outline:none; border-left:3px solid #f31212; border-radius: 5px;}
+    <script>
 
+		function myFunction1() {
+			var x = document.getElementById("instructions");
 
-    #main .tb:focus{height:28px; border:0px solid #f26724; outline:none; border-left:3px solid #f31212; border-radius: 5px;}
+			if (x.innerHTML === "") {
+				x.innerHTML = "HELLO! READ THE INSTRUCTIONS GIVEN ABOVE \
+				CAREFULLY AND FILL THE FOLLOWING FORM TO PARTICIPATE IN \
+				ANOKHA FEST 2023.";
+			} 
 
-    /* css code for button*/
-    #main .btn{ margin-left: auto; margin-right: auto; width:150px; height:32px; outline:none;  color:#f7f7f7; font-weight:bold; border:0px solid #f26724; 
-    text-shadow: 0px 0.5px 0.5px #fff; border-radius: 5px; font-weight: 600; color: #000000; letter-spacing: 1px; 
-    font-size:14px; background-color:#f1f1f1; -webkit-transition: 1s; -moz-transition: 1s; transition: 1s;}
-  
-    #main .btn:hover{
-	background-color:#f26724; outline:none;  border-radius: 20px; color:#f1f1f1; border:1px solid #f1f1f1;
-    -webkit-transition: 1s; -moz-transition: 1s; transition: 1s; 
-	}
-	ctr{
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.switch {
-  position: relative;
-  display: inline-block;
-  width: 48px;
-  height: 20px;
-}
+			else {
+				x.innerHTML = "";
+			}
+		}
 
-.switch input { 
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
+		/*function validateName() {
+			let namelocal;
+			namelocal=document.getElementById("name").value;
 
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
+			console.log("Username: " + namelocal);
+		}
 
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 16px;
-  width: 16px;
-  left: 3px;
-  bottom: 2.5px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .2s;
-}
-
-input:checked + .slider {
-  background-color: #2196F3;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-	h2 {
-		align-content: center;
-  font-size: 15;
-  line-height: 2;
-  font-weight: 700;
-  margin-top: 40px;
-  margin-bottom: 20px;
-
-}
-.box {
-  width: 20%;
-  margin: 0 auto;
-  background: rgba(255,255,255,0.2);
-  padding: 35px;
-  border: 2px solid #fff;
-  border-radius: 20px/50px;
-  background-clip: padding-box;
-  text-align: center;
-}
-
-.button {
-  font-size: 1em;
-  padding: 10px;
-  color: #fff;
-  border: 2px solid orange;
-  border-radius: 20px/50px;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 0.3s ease-out;
-}
-.button:hover {
-  background: orange;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
-  visibility: hidden;
-  opacity: 0;
-}
-.overlay:target {
-  visibility: visible;
-  opacity: 1;
-}
-
-.popup {
-  margin: 70px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 5px;
-  width: 30%;
-  position: relative;
-  transition: all 5s ease-in-out;
-}
-
-.popup h2 {
-  margin-top: 0;
-  color: #333;
-  font-family: Tahoma, Arial, sans-serif;
-}
-.popup .close {
-  position: absolute;
-  top: 5px;
-  right: 15px;
-  transition: all 200ms;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: black;
-}
-.popup .close:hover {
-  color: black;
-}
-.popup .content {
-  max-height: 30%;
-  overflow: auto;
-}
-  </style>
-  <script>
-	function myFunction1() {
-  var x = document.getElementById("instructions");
-  if (x.innerHTML === "") {
-    x.innerHTML = "HELLO! READ THE INSTRUCTIONS GIVEN ABOVE CAREFULLY AND FILL THE FOLLOWING FORM TO PARTICIPATE IN ANOKHA FEST 2023.";
-  } else {
-    x.innerHTML = "";
-  }
-}
-function validateName()
-{
-let namelocal;
-namelocal=document.getElementById("name").value;
-
-console.log("Username: " + namelocal);
-}
-function validateUniversityName()
-{
-let universityNamelocal;
-namelocal1=document.getElementById("Uname").value;
-
-console.log("University name: " + namelocal1);
-}
-	
+		function validateUniversityName() {
+		let universityNamelocal;
+		namelocal1=document.getElementById("Uname").value;
+		console.log("University name: " + namelocal1);
+		}*/
+			
 	</script>
-  </head>
+</head>
+<body>
 
-	<body>
-		<form onsubmit="confirmInput()" action="login.html" name="form1" onsubmit="return validateForm()" >
-	<!-- Main div code -->
-	
-	<div id="main">
-	<div class="h-tag">
-	<h1 style="color: #a4123f; text-align: center;" >Register for the Anokha 2022 – 12th National Level Techfest</h1>
-	</div>
-	<div class="h-tag"><a href="login.html" ><h2 style="text-align: center;" >Already Created account, Click Here to log-in</h2></a></div>
-	<!-- create account div -->
-	<div class="login">
-		<div id="popup1" class="overlay">
-			<div class="popup">
-				<h3 style="color: #a4123f;">Instructions for Amritian's and Non-Amritian's</h3>
-				<a class="close" href="#">×</a>
-				<div class="content">
-					<h4 style="color: #a4123f;">For Amritian's</h4>You will get the link soon to your univercity e-mails.<br>So, You don't nedd to fill this.<br><br>
-					<h4 style="color: #a4123f;">For Non-Amritian's </h4>First, fill the below form and once you submit the form, you will get the payment link to the e-mail which you gave.<br><br>
-					<b>Note: </b> Your account will activated only when payment process is completed.
-	
+	<form onsubmit="inputValidate()" method="post" action="login.html" name="form1" 
+		onsubmit="return validateForm()">
+		<div id="main">
+
+			<div class="h-tag">
+				<h1 style="color: #a4123f; text-align: center;">Register for the 
+					Anokha 2022 – 12th National Level Techfest 
+				</h1>
+			</div>
+
+			<div class="h-tag">
+				<a href="login.html" >
+					<h2 style="text-align: center;">
+						Already Created account, Click Here to log-in
+					</h2>
+				</a>
+			</div>
+		
+			<div class="login">
+				<div id="popup1" class="overlay">
+					<div class="popup">
+						<h3 style="color: #a4123f;">Instructions for Amritian's and Non-Amritian's</h3>
+						<a class="close" href="#">×</a>
+						<div class="content">
+							<h4 style="color: #a4123f;">For Amritian's</h4>You will get 
+							the link soon to your univercity e-mails.<br>So, You don't 
+							nedd to fill this.
+							<br><br>
+							<h4 style="color: #a4123f;">For Non-Amritian's </h4>
+							First, fill the below form and once you submit the form, 
+							you will get the payment link to the e-mail which you gave.
+							<br><br>
+							<b>Note: </b> Your account will activated only when 
+							payment process is completed.
+						</div>
+					</div>
 				</div>
 			</div>
+
+			<div>
+				<button class="btn" type="button" value="submit" 
+				onclick="window.location.href='#popup1'" >Instructions</button>
+			</div>
+
+			<table cellspacing="5" cellpadding="10" border="0" class="m">
+				
+				<tr>
+					<td>
+						<button id="instructions" class="btn" type="button"
+						onclick="myFunction1()">WHAT TO DO??
+						</button>
+					</td>
+
+					<p id="instructions"></p><br>
+				</tr>
+
+				<tr>
+					<td>
+						Name
+					</td>
+					<td>
+						<input type="text" id="name" name="name" 
+						placeholder="Enter your Name here" class="tb" required>
+					</td>
+				</tr>
+					
+				<tr>
+					<td>
+						Gender 
+					</td>
+					<td>
+						<input required type="radio" id="male" name="gen" value="Male">
+
+						<label for="male">
+							Male
+						</label>
+
+						<input type="radio" id="female" name="gen" value="Female">
+
+						<label for="female">
+							Female
+						</label>
+
+						<input type="radio" id="others" name="gen" value="Others">
+
+						<label for="others">
+							Others
+						</label>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						Your Birthday
+					</td>
+					<td>
+						<input class="tb2" type="date" id="birthday" name="birthday">
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						Email ID :
+					</td>
+					<td>
+						<input type="email" name="email" 
+						placeholder="Enter Email ID here" class="tb" required />
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						Password 
+					</td>
+					<td>
+						<input type="text" name="pass" id="pass" 
+						class="tb" required placeholder="Enter password">
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						Confirm Password
+					</td>
+					<td>
+						<input type="password" name="c_pass" id="c_pass" 
+						class="tb" required placeholder="Confirm password"> 
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						College Name
+					</td>
+					<td>
+						<input type="text" name="Uname" 
+						placeholder="Enter your College name here" 
+						class="tb" required />
+					</td>	
+				</tr>
+
+				<tr>
+					<td>
+						Your Degree
+					</td>
+					<td>  
+						<select class="tb2" name="degree" id="degree">
+							<option value="btech">
+								B-TECH
+							</option>
+							<option value="ba">
+								BA
+							</option>
+							<option value="bse">
+								BSE
+							</option>
+							<option value="intma">
+								INT MA
+							</option>
+							<option value="intmsc">
+								INT M.Sc
+							</option>
+							<option value="mtech">
+								M-TECH
+							</option>
+							<option value="ma">
+								MA
+							</option>
+							<option value="mba">
+								MBA
+							</option>
+						</select>
+					</td>	
+				</tr>
+				<tr>
+					<td>
+						Your Branch
+					</td>
+					<td>  
+						<select class="tb2" name="branch" id="branch">
+							<option value="aie">
+								AIE
+							</option>
+							<option value="are">
+								ARE
+							</option>
+							<option value="cse">
+								CSE
+							</option>
+							<option value="cys">
+								CYS
+							</option>
+							<option value="ece">
+								ECE
+							</option>
+							<option value="elc">
+								ELC
+							</option>
+							<option value="eee">
+								EEE
+							</option>
+							<option value="mech">
+								MECH
+							</option>
+						</select>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						Languages you are proficient with
+					</td>
+					<td>
+						<input name="language" type="checkbox" 
+						id="lan1" name="lan1" value="python">
+						<label for="lan1">
+							Python
+						</label>
+						<input type="checkbox" id="lan2" name="lan2" value="c++">
+						<label for="lan2">
+							C++
+						</label>
+						<input type="checkbox" id="lan3" name="lan3" value="c">
+						<label for="lan3">
+							C
+						</label>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						Tell us more
+					</td>
+					<td>
+						<textarea required id="intro" name="intro" rows="4" 
+						cols="50" class="tb1" 
+						placeholder="Introduce your technical skills briefly"></textarea>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						Tell us more
+					</td>
+					<td>
+						<textarea required id="add" name="add" rows="2" cols="50" 
+						class="tb3" placeholder="Your address"></textarea>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						Your Resume
+					</td>
+					<td>
+						<input type="file" id="myFile_cv" name="filename" 
+						accept="image/*.,.jpg,.jpeg,.pdf">
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						Your Photo
+					</td>
+					<td>
+						<input type="file" id="myFile_dp" name="filename" 
+						accept="image/*.,.jpg,.jpeg,.png">
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<centre>
+							<label class="switch">
+								<input type="checkbox">
+								<span class="slider round"></span>
+							</label>	
+						</centre>
+					</td>
+					<td>
+						<A>Turn this switch ON, to get notified about 
+							upcomming events and updates 
+						</A>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<button class="btn" onclick="window.print()">Print this page
+						</button>
+					</td>
+					<td>
+						<input id="reset" type="reset" value="Clear Form" 
+						id="res" class="btn" />
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+
+					</td>
+					<td>
+						<input id="submit" type="submit" value="submit" class="btn">
+					</td>
+				</tr>
+			
+				<script>
+					function myFunction() {
+						document.getElementById("reset").reset();
+					}
+					function inputValidate() {
+
+						var pass = document.getElementById('pass').value;
+						var c_pass = document.getElementById('c_pass').value;
+						if (pass != c_pass) {
+							alert("Passwords do not match.");
+							return false;
+						}
+
+						name = document.forms[0].name.value;
+						alert("Hello! "+ name +" Your Registration is Successfull. Now try logging-in...");
+
+						return true;
+
+					}
+					function myFunction() {
+						document.getElementById("submit").submit();
+					}
+				</script>
+
+			</table>
 		</div>
-		<div>
-			<button class="btn" type="button" value="submit" onclick="window.location.href='#popup1'" >Instructions</button>
-		</div>
-	<table cellspacing="5" cellpadding="10" border="0" class="m">
-		<tr><td><button id="instructions" class="btn" type="button" onclick="myFunction1()">WHAT TO DO??</button></td>
-		<p id="instructions"></p><br></tr>
-		
-		
-
-
-	<tr>
-	<td>Name</td>
-	<td><input type="text" id="name" name="name" placeholder="Enter your Name here" class="tb" required></td>
-	</tr>
-		
-	<tr>
-	<td>Gender </td>
-	<td>
-	<input required type="radio" id="male" name="gen" value="Male">
-	<label for="male">Male</label>
-	<input type="radio" id="female" name="gen" value="Female">
-	<label for="female">Female</label>
-	<input type="radio" id="others" name="gen" value="Others">
-	<label for="others">Others</label></td>
-	</tr>	
-	<tr>
-	<td>Your Birthday</td>
-	<td>
-    <input class="tb2" type="date" id="birthday" name="birthday"></td>
-	</tr>
-	<tr>
-	<td>Email ID :</td>
-	<td><input type="text" name="email" placeholder="Enter Email ID here" class="tb" required /></td>
-	</tr>
-	<tr>
-	<td>Password </td>
-	<td><input type="text" name="password" id="password" class="tb" required placeholder="Enter password"></td></tr>
-	<tr>
-	<td>Confirm Password</td>
-	<td> <input type="password" name="cpassword" id="cpassword" class="tb" required placeholder="Confirm password"> </td></tr>
-	<tr>
-		<td>College Name</td>
-		<td><input type="text" name="Uname" placeholder="Enter your College name here" class="tb" required /></td>
-		</tr>
-	<tr><td>Your Degree</td>
-		<td>  
-			<select class="tb2" name="degree" id="degree">
-			  <option value="btech">B-TECH</option>
-			  <option value="ba">BA</option>
-			  <option value="bse">BSE</option>
-			  <option value="intma">INT MA</option>
-			  <option value="intmsc">INT M.Sc</option>
-			  <option value="mtech">M-TECH</option>
-			  <option value="ma">MA</option>
-			  <option value="mba">MBA</option>
-			</select></td>
-		</tr>
-	<tr><td>Your Branch</td>
-	<td>  
-		<select class="tb2" name="branch" id="branch">
-		  <option value="aie">AIE</option>
-		  <option value="are">ARE</option>
-		  <option value="cse">CSE</option>
-		  <option value="cys">CYS</option>
-		  <option value="ece">ECE</option>
-		  <option value="elc">ELC</option>
-		  <option value="eee">EEE</option>
-		  <option value="mech">MECH</option>
-		</select></td>
-	</tr>
-
-	<tr><td>Languages you are proficient with</td>
-	<td><input name="language" type="checkbox" id="lan1" name="lan1" value="python">
-	<label for="lan1">Python</label>
-	<input type="checkbox" id="lan2" name="lan2" value="c++">
-	<label for="lan2">C++</label>
-	<input type="checkbox" id="lan3" name="lan3" value="c">
-	<label for="lan3">C</label></td>
-	</tr>
-	<tr>
-	<td>Tell us more</td>
-	<td>
-	<textarea required id="intro" name="intro" rows="4" cols="50" class="tb1" placeholder="Introduce your technical skills briefly"></textarea>
-	</td>
-	</tr>
-	<tr>
-		<td>Tell us more</td>
-		<td>
-		<textarea required id="add" name="add" rows="2" cols="50" class="tb3" placeholder="Your address"></textarea>
-		</td>
-		</tr>
-	<tr>
-	<td>Your Resume</td>
-	<td><input type="file" id="myFile_cv" name="filename" accept="image/*.,.jpg,.jpeg,.pdf"></td>
-	</tr>
-	<tr>
-		<td>Your Photo</td>
-		<td><input type="file" id="myFile_dp" name="filename" accept="image/*.,.jpg,.jpeg,.png"></td>
-		</tr>
-	<tr><td><centre>
-		<label class="switch">
-			<input type="checkbox">
-			<span class="slider round"></span>
-		  </label>	
-		</centre></td><td><A>Turn this switch ON, to get notified about upcomming events and updates </A></td></tr>
-	<tr>
-		<td><button class="btn" onclick="window.print()">Print this page</button></td>
-	<td>
-	<input id="reset" type="reset" value="Clear Form" id="res" class="btn" /></td>
-	</tr>
-	<script>
-		function myFunction() {
-		  document.getElementById("reset").reset();
-		}
-		</script>
-	<tr><td></td>
-		<td><input id="submit" type="submit" value="submit" class="btn"></td></tr>
-	
-
-		<script>
-			function confirmInput() {
-			  name = document.forms[0].name.value;
-			  alert("Hello! "+ name +" Your Registration is successfull. Now try logging-in...");
-			}
-			</script>
-		<script>
-			function myFunction() {
-			  document.getElementById("submit").submit();
-			  
-			}
-			</script>
-
-	</table>
-	</div>
-	<!-- create account box ending here.. -->
-	</div>
-	<!-- Main div ending here... -->
 	</form>
-	</body>
-	</html>
+</body>
+</html>

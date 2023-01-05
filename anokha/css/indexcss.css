@@ -1,0 +1,310 @@
+.box-form .left .overlay h1 {
+    font-size: 8vmax;
+    line-height: 1;
+    font-weight: 800;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.box-form .left .overlay {
+    margin-top: 150px ;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    background: #646cfaad;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.box-form {
+    margin: 0 auto;
+    width: 90%;
+    background: #FFFFFF;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex: 1 1 100%;
+    align-items: stretch;
+    justify-content: space-between;
+    box-shadow: 0 0 20px 6px #090b6f85;
+    margin-top: 10px;
+}
+
+.box-form1 {
+    margin: 0 auto;
+    width: 90%;
+    background: #FFFFFF;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 8px;
+    border:  2.5px solid #a4123f ;
+    overflow: hidden;
+    display: flex;
+    flex: 1 1 100%;
+    align-items:center;
+    justify-content: space-between;
+    box-shadow: 0 0 20px 6px #090b6f85;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+img {
+    display:block;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-image: url("https://amritaworld.org/wp-content/uploads/2015/07/amrita-university-headquarters-coimbatore.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+}
+  
+.box-form .left {
+    color: #FFFFFF;
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-image: url("https://dt19wmazj2dns.cloudfront.net/wp-content/themes/amrita/images/logo-colored.svg");
+    margin: 10px;
+    overflow: hidden;
+}
+    
+#main {
+    width:600px; height:auto; overflow:hidden; 
+    padding-bottom:20px; margin-left: 425px; 
+    margin-right: 425px; border-radius:50px; 
+    padding-left:10px; margin-top:50px; 
+    border-top:5px double #ffffff; margin-bottom: 50px; 
+    border-bottom:5px double #ffffff; padding-top:20px;
+}
+      
+#main table {
+    font-family:"Comic Sans MS", cursive; 
+    color: rgb(255, 255, 255);
+}
+      /* css code for textbox */
+#main .tb {
+    height:28px; width:230px; border:3px solid #0ab9e1; 
+    color:#21d685; font-weight:bold; 
+    border-left:5px solid #f7f7f7; opacity:10;
+}
+
+#main .tb1 {
+    height:100px; width:230px; border:3px solid #0ab9e1; 
+    color:#21d685; font-weight:bold; 
+    border-left:5px solid #f7f7f7; opacity:10;
+}
+
+#main .tb1:focus {
+    height:100px; border:0px solid #f26724; 
+    outline:none; border-left:3px solid #f31212; 
+    border-radius: 5px;
+}
+  
+#main .tb2 {
+    height:28px; width:100px; border:3px solid #0ab9e1; 
+    color:#21d685; font-weight:bold; 
+    border-left:5px solid #f7f7f7; opacity:10;
+}
+
+#main .tb2:focus {
+    height:28px; border:0px solid #f26724; 
+    outline:none; border-left:3px solid #f31212; 
+    border-radius: 5px;
+}
+  
+#main .tb:focus {
+    height:28px; border:0px solid #f26724; 
+    outline:none; border-left:3px solid #f31212; 
+    border-radius: 5px;
+}
+      /* css code for button*/
+#main .btn { 
+    margin-left: auto; margin-right: auto; width:150px; 
+    height:32px; outline:none;  color:#f7f7f7; 
+    font-weight:bold; border:0px solid #f26724; 
+    text-shadow: 0px 0.5px 0.5px #fff; border-radius: 5px; 
+    font-weight: 600; color: #000000; letter-spacing: 1px; 
+    font-size:14px; background-color:#f1f1f1; 
+    -webkit-transition: 1s; -moz-transition: 1s; transition: 1s;}
+    
+#main .btn:hover {
+    background-color:#f26724; outline:none;  
+    border-radius: 20px; color:#f1f1f1; 
+    border:1px solid #f1f1f1;
+    -webkit-transition: 1s; -moz-transition: 1s; transition: 1s; 
+}  
+ctr {
+    margin-left: auto;
+    margin-right: auto;
+}
+   
+h2 {
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 430px;
+    margin-right: 425px;
+    align-content: center;
+    font-size: 15;
+    line-height: 1.5;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.mu-hero-featured-area {
+    display: inline;
+    float: left;
+    padding: 60px 0 150px;
+    width: 100%;
+}
+  
+.mu-hero-featured-content {
+    display: inline;
+    float: right;
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+}
+  
+.mu-hero-featured-content h1 {
+    font-size: 45px;
+    color: #a4123f;
+    font-weight: 530;
+    margin-bottom: 15px;
+}
+  
+  
+.mu-hero-featured-content h2 {
+    color: #a4123f;
+    font-size: 25px;
+    font-weight: 550;
+}
+  
+.mu-event-date-line {
+    background-color: #fff;
+    border:  2.5px solid #a4123f ;
+    color: #333;
+    padding: 5px 10px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.mu-event-date-line1 {
+    background-color: #fff;
+    border:  2.5px solid #a4123f ;
+    color: #333;
+    padding: 5px 10px;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: 600;
+    text-align: center;
+    margin-left: 550px;
+    margin-right: auto;
+    border-radius: 8px;
+}
+  
+.mu-event-counter-area {
+    display: inline;
+    float: left;
+    margin-top: 50px;
+    width: 100%;
+}
+  
+#mu-event-counter{
+    display: inline;
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+.heading {
+    background-color: rgb(255, 255, 255,1);
+    color: #a4123f;
+    padding: 5px 10px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 25px;
+    border-radius: 8px;
+}
+
+.para {
+    background-color: rgba(255, 1, 1, 0.65);
+    color: rgb(81, 202, 95);
+    padding: 5px 10px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.para1 {
+    background-color: rgba(255, 255, 255, 0.523);
+    color: rgb(0, 255, 255);
+    padding: 5px 10px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.scenter {
+
+    float: left;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+  
+imgr {
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.registerbtn {      
+    background-color: white;
+    border: 2.5px solid #a4123f;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-left: 750px;
+    border-radius: 8px;
+    font-weight: 600;
+    opacity: 0.9;
+    width: 200px;
+    margin: 0 auto;
+}  
+  
+.registerbtn:hover { 
+    background-color: #a4123f;
+    color: white; 
+    opacity: 0.9;  
+}  
+  
+.center {
+    display: block;
+    margin-left: 525px;
+    margin-right: auto;
+    width: 30%;
+}
+  

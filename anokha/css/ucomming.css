@@ -1,0 +1,46 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .center {
+    display: block;
+    margin-left: 525px;
+    margin-top: 50px;
+    margin-right: auto;
+    width: 30%;
+  }
+  body {
+    background-image: linear-gradient(135deg, #ffb2d1 10%, #1904E5 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+  }
+  
+  
+  .topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+  }
+  
+  .bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+  }
+  
+  .middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  hr {
+    margin: auto;
+    width: 40%;
+  }
