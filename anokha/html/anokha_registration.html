@@ -56,8 +56,8 @@
 			</div>
 
 			<div class="h-tag">
-				<a href="login.html" >
-					<h2 style="text-align: center;">
+				<a onclick="window.location.href='login.html'">
+					<h2 style="text-align: center; cursor: pointer;">
 						Already Created account, Click Here to log-in
 					</h2>
 				</a>
@@ -70,12 +70,13 @@
 						<a class="close" href="#">×</a>
 						<div class="content">
 							<h4 style="color: #a4123f;">For Amritian's</h4>You will get 
-							the link soon to your univercity e-mails.<br>So, You don't 
+							the link soon to your university e-mails.<br>So, You don't 
 							nedd to fill this.
 							<br><br>
 							<h4 style="color: #a4123f;">For Non-Amritian's </h4>
 							First, fill the below form and once you submit the form, 
-							you will get the payment link to the e-mail which you gave.
+							you will get the payment link to the e-mail which you gave, 
+							in that you will find all details including accomodation.
 							<br><br>
 							<b>Note: </b> Your account will activated only when 
 							payment process is completed.
@@ -91,7 +92,7 @@
 
 			<table cellspacing="5" cellpadding="10" border="0" class="m">
 				
-				<tr>
+				<!--<tr>
 					<td>
 						<button id="instructions" class="btn" type="button"
 						onclick="myFunction1()">WHAT TO DO??
@@ -99,15 +100,16 @@
 					</td>
 
 					<p id="instructions"></p><br>
-				</tr>
+				</tr>-->
 
 				<tr>
 					<td>
 						Name
 					</td>
 					<td>
-						<input type="text" id="name" name="name" 
-						placeholder="Enter your Name here" class="tb" required>
+						<input type="text" id="name" name="name" minlength="4" 
+						maxlength="50" placeholder="Enter your Name here" 
+						class="tb" required>
 					</td>
 				</tr>
 					
@@ -180,8 +182,8 @@
 						College Name
 					</td>
 					<td>
-						<input type="text" name="Uname" 
-						placeholder="Enter your College name here" 
+						<input type="text" name="Uname" minlength="10s"
+						maxlength="100" placeholder="Enter your College name here" 
 						class="tb" required />
 					</td>	
 				</tr>
