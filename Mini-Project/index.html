@@ -13,12 +13,13 @@
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
     
     
-    <script type="application/ld+json">{
+    <script type="application/ld+json"> {
 		"@context": "http://schema.org",
 		"@type": "Organization",
 		"name": "",
 		"logo": "images/Amrita-vishwa-vidyapeetham-color-logo.png"
-}</script>
+  }
+</script>
     <meta name="theme-color" content="#478ac9">
     <meta property="og:title" content="Home">
     <meta property="og:type" content="website">
@@ -47,7 +48,7 @@
             <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
           </div>
         </nav>
-        <a href="https://www.amrita.edu.com" class="u-image u-logo u-image-1" data-image-width="516" data-image-height="193">
+        <a href="https://www.amrita.edu" class="u-image u-logo u-image-1" data-image-width="516" data-image-height="193">
           <img src="images/Amrita-vishwa-vidyapeetham-color-logo.png" class="u-logo-image u-logo-image-1">
         </a>
         <h2 class="u-text u-text-1"><b>LMS&nbsp;</b>|&nbsp;<span style="font-size: 1.875rem;">L​OGIN</span>
@@ -57,18 +58,20 @@
       <div class="u-clearfix u-sheet u-sheet-1">
         <h3 class="u-align-center u-text u-text-1">WELCOME</h3>
         <div class="u-form u-radius-50 u-white u-form-1">
-          <form action="https://forms.nicepagesrv.com/Form/Process" class="u-clearfix u-form-spacing-20 u-form-vertical u-inner-form" source="email" name="form" style="padding: 30px;">
+
+          <form method="get" id="login" class="u-clearfix u-form-spacing-20 u-form-vertical u-inner-form" name="form" style="padding: 30px;">
+
             <div class="u-form-email u-form-group">
-              <label for="email-7dcd" class="u-label u-text-grey-40 u-label-1">Username</label>
-              <input type="email" placeholder="Enter a valid id" id="email-7dcd" name="email" class="u-border-1 u-border-grey-40 u-input u-input-rectangle u-white u-input-1" required="">
+              <label for="email-7dcd" class="u-label u-text-grey-40 u-label-1">User id</label>
+              <input type="text" placeholder="Enter a valid id" id="id" name="id" class="u-border-1 u-border-grey-40 u-input u-input-rectangle u-white u-input-1" required="">
             </div>
             <div class="u-form-address u-form-group u-form-group-2">
               <label for="address-8381" class="u-label u-text-grey-40 u-label-2">Password</label>
-              <input type="text" placeholder="Enter password" id="address-8381" name="address" class="u-border-1 u-border-grey-40 u-input u-input-rectangle u-white u-input-2" required="">
+              <input type="text" placeholder="Enter password" id="pass" name="pass" class="u-border-1 u-border-grey-40 u-input u-input-rectangle u-white u-input-2" required="">
             </div>
             <div class="u-align-left u-form-group u-form-submit">
-              <a href="html/studash.html"  class="u-btn u-btn-round u-btn-submit u-button-style u-hover-palette-1-dark-1 u-palette-1-base u-radius-50 u-btn-1">Login<br>
-              </a>
+              <button  type="submit" id="submit" value="submit" onclick="auth()" class="u-btn u-btn-round u-btn-submit u-button-style u-hover-palette-1-dark-1 u-palette-1-base u-radius-50 u-btn-1">Login<br>
+              </botton>
             </div>
             <!--<div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
             <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
