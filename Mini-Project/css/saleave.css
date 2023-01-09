@@ -1,7 +1,7 @@
  .u-section-1 {
   background-image: url("../images/images.jpg");
   background-position: 50% 50%;
-}
+} 
 
 .u-section-1 .u-sheet-1 {
   min-height: 982px;
@@ -341,3 +341,61 @@
     margin-top: -99px;
   }
 }
+/* CSS for publish pop up*/ 
+.overlay {
+  height: 800px;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+ 
+  background-size: cover ;
+  width: 100%;
+ 
+  transition: opacity 0.4%;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 0.9;
+}
+
+
+.popup {
+  margin: 70px auto;
+  margin-left: 724px;
+  margin-top: 14px;
+  padding: 20px;
+  background: rgb(38, 255, 0);
+  border-radius: 10px;
+  width: 50%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+.popup .close:hover {
+  color: black;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+

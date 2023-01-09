@@ -5,7 +5,7 @@ function auth() {
 
     if (username === "admin" && password ==="root") {
       alert("You have successfully logged in.");           
-      window.open('html/admin.html');
+      window.open("html/admin.html");
     }
 
     else if (username === "student" && password ==="password") {
@@ -16,7 +16,7 @@ function auth() {
 
     else if (username === "faculty" && password ==="123abc") {
       alert("You have successfully logged in."); 
-      window.open("html/faculty.html");
+      window.open("html/facdash.html");
       return false;
     }
 

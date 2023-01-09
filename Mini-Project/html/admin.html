@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="../css/Admin.css" media="screen">
     <script class="u-script" type="text/javascript" src="../js/admin.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="../js/admin1.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="../js/admin_2.js" defer=""></script>
     <meta name="generator" content="Nicepage 4.21.12, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
     <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
@@ -98,23 +99,20 @@
     <section class="u-clearfix u-image u-section-1" id="sec-39c1" data-image-width="318" data-image-height="159">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h3 class="u-custom-font u-font-open-sans u-text u-text-default u-text-1">Make Your Selection</h3>
+        
+        <form id="form1" method="get" name="form1">
+
         <div class="u-clearfix u-custom-html u-custom-html-1">
-          <form action="/action_page.php">
             <select name="year" id="year">
               <option value="year">Year</option>
-              <option value="2223">2022-23</option>
-              <option value="2122">2021-22</option>
-              <option value="2021">2020-21</option>
-              <option value="1920">2019-20</option>
-              <option value="1819">2018-19</option>
-              <option value="1718">2017-18</option>
-              <option value="1617">2016-17</option>
+              <option  value="1">2022-26</option>
+              <option  value="2">2021-25</option>
+              <option  value="3">2020-24</option>
+              <option  value="4">2019-23</option>
             </select>
-          </form>
         </div>
         <div class="u-clearfix u-custom-html u-custom-html-2">
-          <form action="/action_page.php">
-            <select name="cource" id="cource">
+            <select name="course" id="course">
               <option value="cource"> Select Course</option>
               <option value="btech">B.Tech</option>
               <option value="ba">BA</option>
@@ -131,10 +129,8 @@
             </select>
             <br>
             <br>
-          </form>
         </div>
         <div class="u-clearfix u-custom-html u-custom-html-3">
-          <form action="/action_page.php">
             <select name="branch" id="branch">
               <option value="branch"> Select Branch</option>
               <option value="aee">AEE</option>
@@ -147,17 +143,16 @@
               <option value="cse">CSE</option>
               <option value="cys">CYS</option>
               <option value="eac">EAC</option>
-              <option value="ece">ECE</option>
+              <option value="ec">ECE</option>
               <option value="eie">EIE</option>
               <option value="elc">ELC</option>
               <option value="mee">MEE</option>
             </select>
             <br>
             <br>
-          </form>
+          
         </div>
         <div class="u-clearfix u-custom-html u-custom-html-4">
-          <form action="/action_page.php">
             <select name="sem" id="sem">
               <option value="sem"> Select Semester</option>
               <option value="1">1</option>
@@ -173,11 +168,9 @@
             </select>
             <br>
             <br>
-          </form>
         </div>
         <div class="u-clearfix u-custom-html u-custom-html-5">
-          <form action="/action_page.php">
-            <select name="batch" id="batch">
+            <select name="section" id="section">
               <option value="batch"> Select Batch</option>
               <option value="a">A</option>
               <option value="b">B</option>
@@ -191,64 +184,125 @@
             <br>
           </form>
         </div>
-        <a href="#" class="u-border-none u-btn u-btn-round u-button-style u-hover-palette-3-light-1 u-palette-4-dark-1 u-radius-50 u-btn-1">SHOW</a>
-        <div class="u-align-left u-table u-table-responsive u-table-1">
-          <table class="u-table-entity">
-            <colgroup>
-              <col width="100%">
-            </colgroup>
-            <tbody class="u-table-body">
-              <tr style="height: 45px;">
-                <td class="u-align-center u-border-1 u-border-black u-gradient u-table-cell u-table-cell-1">Student</td>
-              </tr>
-              <tr style="height: 46px;">
-                <td class="u-border-1 u-border-grey-dark-1 u-table-cell">CB.EN.U4CYS21001</td>
-              </tr>
-              <tr style="height: 46px;">
-                <td class="u-border-1 u-border-grey-dark-1 u-table-cell">CB.EN.U4CYS21002</td>
-              </tr>
-              <tr style="height: 46px;">
-                <td class="u-border-1 u-border-grey-dark-1 u-table-cell">.....</td>
-              </tr>
-              <tr style="height: 46px;">
-                <td class="u-border-1 u-border-grey-dark-1 u-table-cell">.....</td>
-              </tr>
-              <tr style="height: 46px;">
-                <td class="u-border-1 u-border-grey-dark-1 u-table-cell">CB.EN.U4CYS21089</td>
-              </tr>
-              <tr style="height: 46px;">
-                <td class="u-border-1 u-border-grey-dark-1 u-table-cell">CB.EN.U4CYS21090</td>
-              </tr>
-            </tbody>
-          </table>
+        <button onclick="select()" class="u-border-none u-btn u-btn-round u-button-style u-hover-palette-3-light-1 u-palette-4-dark-1 u-radius-50 u-btn-1">SHOW</button>
+        <div id="class1" style="display: none;">
+          <div class="u-align-left u-table u-table-responsive u-table-1">
+            <table class="u-table-entity">
+              <colgroup>
+                <col width="100%">
+              </colgroup>
+              <tbody class="u-table-body">
+                <tr style="height: 45px;">
+                  <td class="u-align-center u-border-1 u-border-black u-gradient u-table-cell u-table-cell-1">Student</td>
+                </tr>
+                <tr style="height: 46px;">
+                  <td class="u-border-1 u-border-grey-dark-1 u-table-cell">CB.EN.U4CYS21001</td>
+                </tr>
+                <tr style="height: 46px;">
+                  <td class="u-border-1 u-border-grey-dark-1 u-table-cell">CB.EN.U4CYS21002</td>
+                </tr>
+                <tr style="height: 46px;">
+                  <td class="u-border-1 u-border-grey-dark-1 u-table-cell">.....</td>
+                </tr>
+                <tr style="height: 46px;">
+                  <td class="u-border-1 u-border-grey-dark-1 u-table-cell">.....</td>
+                </tr>
+                <tr style="height: 46px;">
+                  <td class="u-border-1 u-border-grey-dark-1 u-table-cell">CB.EN.U4CYS21089</td>
+                </tr>
+                <tr style="height: 46px;">
+                  <td class="u-border-1 u-border-grey-dark-1 u-table-cell">CB.EN.U4CYS21090</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="u-table u-table-responsive u-table-2">
+            <table class="u-table-entity">
+              <colgroup>
+                <col width="50%">
+                <col width="50%">
+              </colgroup>
+              <tbody class="u-table-body">
+                <tr style="height: 46px;">
+                  <td class="u-align-center u-border-1 u-border-black u-gradient u-table-cell u-table-cell-8">Faculty Name</td>
+                  <td class="u-align-center u-border-1 u-border-grey-dark-1 u-gradient u-table-cell u-table-cell-9">Role</td>
+                </tr>
+                <tr style="height: 46px;">
+                  <td class="u-border-1 u-border-grey-dark-1 u-grey-50 u-table-cell u-table-cell-10">Dr. M.Sethumadhavan</td>
+                  <td class="u-border-1 u-border-grey-dark-1 u-grey-50 u-table-cell u-table-cell-11">Head of Department</td>
+                </tr>
+                <tr style="height: 46px;">
+                  <td class="u-border-1 u-border-grey-dark-1 u-table-cell">Dr. Amrita PP</td>
+                  <td class="u-border-1 u-border-grey-dark-1 u-grey-50 u-table-cell u-table-cell-13">Class Adviser</td>
+                </tr>
+                <tr style="height: 46px;">
+                  <td class="u-border-1 u-border-grey-dark-1 u-table-cell">Dr. Praveen K</td>
+                  <td class="u-border-1 u-border-grey-dark-1 u-grey-50 u-table-cell u-table-cell-15">Mentor</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <a onclick="addClass1()" id="addClass1"  class="u-btn u-btn-round u-button-style u-gradient u-none u-radius-22 u-text-body-alt-color u-btn-2">Add CLASS</a>
+
+          <div id="class2" style="display: none;">
+            <div class="u-align-left u-table u-table-responsive u-table-1">
+              <table class="u-table-entity">
+                <colgroup>
+                  <col width="100%">
+                </colgroup>
+                <tbody class="u-table-body">
+                  <tr style="height: 45px;">
+                    <td class="u-align-center u-border-1 u-border-black u-gradient u-table-cell u-table-cell-1">Student</td>
+                  </tr>
+                  <tr style="height: 46px;">
+                    <td class="u-border-1 u-border-grey-dark-1 u-table-cell">CB.EN.U4CYS22001</td>
+                  </tr>
+                  <tr style="height: 46px;">
+                    <td class="u-border-1 u-border-grey-dark-1 u-table-cell">CB.EN.U4CYS22002</td>
+                  </tr>
+                  <tr style="height: 46px;">
+                    <td class="u-border-1 u-border-grey-dark-1 u-table-cell">.....</td>
+                  </tr>
+                  <tr style="height: 46px;">
+                    <td class="u-border-1 u-border-grey-dark-1 u-table-cell">.....</td>
+                  </tr>
+                  <tr style="height: 46px;">
+                    <td class="u-border-1 u-border-grey-dark-1 u-table-cell">CB.EN.U4CYS22089</td>
+                  </tr>
+                  <tr style="height: 46px;">
+                    <td class="u-border-1 u-border-grey-dark-1 u-table-cell">CB.EN.U4CYS22090</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="u-table u-table-responsive u-table-2">
+              <table class="u-table-entity">
+                <colgroup>
+                  <col width="50%">
+                  <col width="50%">
+                </colgroup>
+                <tbody class="u-table-body">
+                  <tr style="height: 46px;">
+                    <td class="u-align-center u-border-1 u-border-black u-gradient u-table-cell u-table-cell-8">Faculty Name</td>
+                    <td class="u-align-center u-border-1 u-border-grey-dark-1 u-gradient u-table-cell u-table-cell-9">Role</td>
+                  </tr>
+                  <tr style="height: 46px;">
+                    <td class="u-border-1 u-border-grey-dark-1 u-grey-50 u-table-cell u-table-cell-10">Dr. M.Sethumadhavan</td>
+                    <td class="u-border-1 u-border-grey-dark-1 u-grey-50 u-table-cell u-table-cell-11">Head of Department</td>
+                  </tr>
+                  <tr style="height: 46px;">
+                    <td class="u-border-1 u-border-grey-dark-1 u-table-cell">Dr. Ambili KN</td>
+                    <td class="u-border-1 u-border-grey-dark-1 u-grey-50 u-table-cell u-table-cell-13">Class Adviser</td>
+                  </tr>
+                  <tr style="height: 46px;">
+                    <td class="u-border-1 u-border-grey-dark-1 u-table-cell">Mr. Ramaguru Radhakrishnan</td>
+                    <td class="u-border-1 u-border-grey-dark-1 u-grey-50 u-table-cell u-table-cell-15">Mentor</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          <a  id="addClass2" class="u-btn u-btn-round u-button-style u-gradient u-none u-radius-22 u-text-body-alt-color u-btn-2">Add CLASS</a>
         </div>
-        <div class="u-table u-table-responsive u-table-2">
-          <table class="u-table-entity">
-            <colgroup>
-              <col width="50%">
-              <col width="50%">
-            </colgroup>
-            <tbody class="u-table-body">
-              <tr style="height: 46px;">
-                <td class="u-align-center u-border-1 u-border-black u-gradient u-table-cell u-table-cell-8">Faculty Name</td>
-                <td class="u-align-center u-border-1 u-border-grey-dark-1 u-gradient u-table-cell u-table-cell-9">Role</td>
-              </tr>
-              <tr style="height: 46px;">
-                <td class="u-border-1 u-border-grey-dark-1 u-grey-50 u-table-cell u-table-cell-10">Dr. M.Sethumadhavan</td>
-                <td class="u-border-1 u-border-grey-dark-1 u-grey-50 u-table-cell u-table-cell-11">Head of Department</td>
-              </tr>
-              <tr style="height: 46px;">
-                <td class="u-border-1 u-border-grey-dark-1 u-table-cell">Dr. Amrita PP</td>
-                <td class="u-border-1 u-border-grey-dark-1 u-grey-50 u-table-cell u-table-cell-13">Class Adviser</td>
-              </tr>
-              <tr style="height: 46px;">
-                <td class="u-border-1 u-border-grey-dark-1 u-table-cell">Dr. Praveen K</td>
-                <td class="u-border-1 u-border-grey-dark-1 u-grey-50 u-table-cell u-table-cell-15">Mentor</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <a href="#" class="u-btn u-btn-round u-button-style u-gradient u-none u-radius-22 u-text-body-alt-color u-btn-2">Add CLASS</a>
       </div>
     </section>
     
