@@ -254,3 +254,12 @@ h2 {
     max-height: 30%;
     overflow: auto;
 }
+
+footer {
+	text-align: center;
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+	background-color: black;
+	color:white;
+	}
