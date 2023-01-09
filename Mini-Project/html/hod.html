@@ -47,6 +47,7 @@
             </div>
             <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
           </div>
+          
         </nav>
         <h2 class="u-text u-text-default u-text-1">
           <span style="font-weight: 700;">LMS&nbsp;</span>| Dashboard
@@ -54,19 +55,31 @@
         <div class="u-list u-list-1">
           <div class="u-repeater u-repeater-1">
             <div class="u-container-style u-list-item u-repeater-item">
-              <div class="u-container-layout u-similar-container u-container-layout-1"><span class="u-custom-item u-file-icon u-icon u-icon-1" data-href="#"><img src="../images/3602145.png" alt=""></span>
+              <div class="u-container-layout u-similar-container u-container-layout-1">
+                <span class="u-custom-item u-file-icon u-icon u-icon-1" data-href="#popup2">
+                  <img src="../images/3602145.png" title="notifications" alt="notification_icon">
+                </span>
               </div>
             </div>
             <div class="u-container-style u-list-item u-repeater-item">
-              <div class="u-container-layout u-similar-container u-container-layout-2"><span class="u-custom-item u-file-icon u-icon u-icon-2" data-href="../index.html"><img src="../images/3889524.png" alt=""></span>
+              <div class="u-container-layout u-similar-container u-container-layout-2">
+                <span class="u-custom-item u-file-icon u-icon u-icon-2" data-href="../index.html">
+                  <img src="../images/3889524.png" title="Log-Out" alt="Log_out_icon">
+                </span>
               </div>
             </div>
             <div class="u-container-style u-list-item u-repeater-item">
-              <div class="u-container-layout u-similar-container u-container-layout-3"><span class="u-custom-item u-file-icon u-icon u-icon-3" data-href="#"><img src="../images/1144760.png" alt=""></span>
+              <div class="u-container-layout u-similar-container u-container-layout-3">
+                <span class="u-custom-item u-file-icon u-icon u-icon-3" data-href="#popup3">
+                  <img src="../images/1144760.png" title="Profile" alt="Profile_icon">
+                </span>
               </div>
             </div>
             <div class="u-container-style u-list-item u-repeater-item">
-              <div class="u-container-layout u-similar-container u-container-layout-4"><span class="u-custom-item u-file-icon u-icon u-icon-4" data-href="#"><img src="../images/2040504.png" alt=""></span>
+              <div class="u-container-layout u-similar-container u-container-layout-4">
+                <span class="u-custom-item u-file-icon u-icon u-icon-4" data-href="#">
+                  <img src="../images/2040504.png" title="setting" alt="setting_icon">
+                </span>
               </div>
             </div>
           </div>
@@ -95,14 +108,16 @@
           </div>
         </nav>
       </div></header>
+      
     <section class="u-clearfix u-image u-section-1" id="sec-b877" data-image-width="318" data-image-height="159">
-     
-      <div class="u-clearfix u-sheet u-sheet-1">
+      
+
+      <div class="u-clearfix u-sheet u-sheet-1"><br><br><br>
         <div class="u-clearfix u-custom-html u-custom-html-1"></div>
         <div class="u-align-center u-container-style u-grey-5 u-group u-radius-50 u-shape-round u-group-1">
           <div class="u-container-layout u-valign-middle u-container-layout-1">
-            <h1 class="u-text u-text-default u-text-1">Announcement </h1>
-            <input type="text" class="u-hover-feature u-text u-text-2" data-animation-name="pulse" data-animation-duration="1000" style="border-radius: 10px;" data-animation-direction=""><br>You can share important information here.....
+            <h1 id="annoncements" class="u-text u-text-default u-text-1">Announcement </h1>
+            <input type="text" class="u-hover-feature u-text u-text-2" data-animation-name="pulse" data-animation-duration="1000" style="border-radius: 10px;" placeholder="You can share important information here....." data-animation-direction=""><br>
             <button onclick="window.location.href='#popup1'"  class="u-btn u-btn-round u-button-style u-color-scheme-summer-time u-color-style-multicolor-1 u-palette-2-base u-radius-50 u-btn-1">Publish</button>
           </div>
         </div>
@@ -128,13 +143,26 @@
         <div id="popup1" class="overlay">
           <div class="popup">
             <h5 style="color: #a4123f;">Conformation Message</h5>
-            <a class="close" href="#">×</a>
+            <a class="close" href="#,#annoncements">×</a>
             <div class="content">
               
               <b>Announcement you sent has been published </b> 
             </div>
           </div>
         </div>
+        
+        <div id="popup2" class="overlay2">
+          <div class="popup2">
+            <b><a style="color: #a4123f; font-size: 20px;">Notifications</a></b>
+            <a class="close" href="#,#annoncements">×</a> 
+            <div class="content">
+              <b>No new notifications</b><br>
+            </div>
+          </div>
+        </div>
+        
+        
+        
         <div class="u-table u-table-responsive u-table-1">
           <table class="u-table-entity">
             <colgroup>
@@ -167,7 +195,8 @@
               </tr>
             </tbody>
           </table>
-        </div>
+        </div><br><br><br>
+        <b><h4 id="leaves" style="margin-left: 490px; font-size: 40px; ">Leaves</h4></b>
         <h4 class="u-custom-font u-font-montserrat u-text u-text-default u-text-4">
           <span style="font-weight: 700;">Student's </span>
         </h4>
@@ -200,7 +229,7 @@
                 <td class="u-border-2 u-border-grey-40 u-table-cell">1</td>
                 <td class="u-border-2 u-border-grey-40 u-table-cell">19-10-2022</td>
                 <td class="u-border-2 u-border-grey-40 u-table-cell" style="cursor: pointer;" onclick="window.location.href='rohith_profile.html'" >******</td>
-                <td class="u-border-2 u-border-grey-40 u-table-cell">Emergency Leave</td>
+                <td class="u-border-2 u-border-grey-40 u-table-cell">Emg Leave</td>
                 <td class="u-border-2 u-border-grey-40 u-table-cell">5</td>
                 <td class="u-border-2 u-border-grey-40 u-table-cell">xyz</td>
                 <td class="u-border-2 u-border-grey-40 u-table-cell">Pending</td>
@@ -218,7 +247,22 @@
               </tr>
             </tbody>
           </table>
-        </div><span class="u-file-icon u-icon u-icon-2" data-href="#"><img src="../images/4315445.png" alt=""></span><span class="u-file-icon u-icon u-icon-3"><img src="../images/1828843.png" alt=""></span><span class="u-file-icon u-icon u-icon-4"><img src="../images/4315445.png" alt=""></span><span class="u-file-icon u-icon u-icon-5"><img src="../images/1828843.png" alt=""></span>
+        </div>
+        
+
+        <span class="u-file-icon u-icon u-icon-2"  data-href="#popup4">
+          <img src="../images/4315445.png" title="Approve" alt="tick_mark">
+        </span>
+        <span class="u-file-icon u-icon u-icon-3" data-href="#popup6">
+          <img src="../images/1828843.png" title="Reject" alt="Cross_mark">
+        </span>
+        <span class="u-file-icon u-icon u-icon-4" data-href="#popup4" >
+          <img src="../images/4315445.png" title="Approve" alt="tick_mark">
+        </span>
+        <span class="u-file-icon u-icon u-icon-5" data-href="#popup6">
+          <img src="../images/1828843.png" title="Reject" alt="Cross_mark">
+        </span>
+
         <h4 class="u-custom-font u-font-montserrat u-text u-text-default u-text-5">Faculty's</h4>
         <div class="u-table u-table-responsive u-table-3">
           <table class="u-table-entity">
@@ -249,7 +293,7 @@
                 <td class="u-border-2 u-border-grey-40 u-table-cell">1</td>
                 <td class="u-border-2 u-border-grey-40 u-table-cell">19-10-2022</td>
                 <td class="u-border-2 u-border-grey-40 u-table-cell">******</td>
-                <td class="u-border-2 u-border-grey-40 u-table-cell">Half Day Leave</td>
+                <td class="u-border-2 u-border-grey-40 u-table-cell">Half-Day Leave</td>
                 <td class="u-border-2 u-border-grey-40 u-table-cell">1</td>
                 <td class="u-border-2 u-border-grey-40 u-table-cell">xyz</td>
                 <td class="u-border-2 u-border-grey-40 u-table-cell">Pending</td>
@@ -267,7 +311,70 @@
               </tr>
             </tbody>
           </table>
-        </div><span class="u-file-icon u-icon u-icon-6"><img src="../images/4315445.png" alt=""></span><span class="u-file-icon u-icon u-icon-7"><img src="../images/1828843.png" alt=""></span><span class="u-file-icon u-icon u-icon-8"><img src="../images/4315445.png" alt=""></span><span class="u-file-icon u-icon u-icon-9"><img src="../images/1828843.png" alt=""></span>
+        </div>
+        <span class="u-file-icon u-icon u-icon-6">
+          <img src="../images/4315445.png" data-href="#popup4" title="Approve" alt="tick_mark">
+        </span>
+        <span class="u-file-icon u-icon u-icon-7">
+          <img src="../images/1828843.png" data-href="#popup6" title="Reject" alt="cross_mark">
+        </span>
+        <span class="u-file-icon u-icon u-icon-8">
+          <img src="../images/4315445.png" data-href="#popup4" title="Approve" alt="tick_mark">
+        </span>
+        <span class="u-file-icon u-icon u-icon-9">
+          <img src="../images/1828843.png" data-href="#popup6" title="Reject" alt="cross_mark">
+        </span>
+      </div>
+      <div id="popup6" class="overlay6">
+        <div class="popup6">
+          <b><a style="color: #a4123f;font-size: 20px;">Conformation Message</a></b>
+          <a class="close" href="#,#leaves">×</a>
+          <div class="content">
+            <b style="color: #a4123f;">Are you Sure?</b><br>
+            <button type="submit" class="button-4" data-href="#popup5">Yes</button> 
+            <button type="submit" class="button-3" data-href="#,#leaves">Cancel</button>
+          </div>
+        </div>
+      </div>
+      <div id="popup5" class="overlay5">
+        <div class="popup5">
+          <b><a style="color: #ffffff;font-size: 20px;">Conformation Message</a></b>
+          <a class="close" href="#,#leaves">×</a>
+          <div class="content">
+            <b>Rejected.</b> 
+          </div>
+        </div>
+      </div>
+      <div id="popup4" class="overlay4">
+        <div class="popup4">
+          <b><a style="color: #a4123f;font-size: 20px;">Conformation Message</a></b>
+          <a class="close" href="#,#leaves">×</a>
+          <div class="content">
+            <b>Approved.</b> 
+          </div>
+        </div>
+      </div>
+      <div id="popup3" class="overlay1">        
+        <div class="popup1">
+          <b><a style="color: #a4123f; font-size: 30px;">Profile</a></b>
+          <a class="close" href="#">×</a> 
+          <div class="content">
+            <img src="../images/MS.jpg" style="width: 20%; border-radius: 120px; margin-top: 0px; position: absolute; margin-left: 730px;" >
+
+            <br><B>Hello! Mr. Dr. Sethu Madhavan</b>
+              <br>
+              <b>Head of the Department </b><br>
+            <b>Head of TIFAC-Centre of Relevance and Excellence in Cyber Security<b><br>
+              <b></b>
+              <b> Amrita School of Computing</b> <br> 
+              <b>Amrita Vishwa Vidyapeetham</b> <br>
+              <b>Coimbatore</b><br>  
+            <br>
+            <b></b><br><br>
+            <br>
+            <b>History of Leaves: </b> <b> 0 in this month</b> 
+          </div>
+        </div>
       </div>
       
     </section>

@@ -7,8 +7,8 @@ function select() {
     let e= document.getElementById("section").value;
 
 
-    var x = document.getElementById("class1");
-    var y = document.getElementById("class2");
+    let x = document.getElementById("class1");
+    let y = document.getElementById("class2");
 
 
    

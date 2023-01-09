@@ -56,19 +56,31 @@
         <div class="u-list u-list-1">
           <div class="u-repeater u-repeater-1">
             <div class="u-container-style u-list-item u-repeater-item">
-              <div class="u-container-layout u-similar-container u-container-layout-1"><span class="u-custom-item u-file-icon u-icon u-icon-1" data-href="#popup2"><img src="../images/3602145.png" alt=""></span>
+              <div class="u-container-layout u-similar-container u-container-layout-1">
+                <span class="u-custom-item u-file-icon u-icon u-icon-1" data-href="#popup2">
+                  <img src="../images/3602145.png" title="notifications" alt="notification_icon">
+                </span>
               </div>
             </div>
             <div class="u-container-style u-list-item u-repeater-item">
-              <div class="u-container-layout u-similar-container u-container-layout-2"><span class="u-custom-item u-file-icon u-icon u-icon-2" data-href="../index.html"><img src="../images/3889524.png" alt=""></span>
+              <div class="u-container-layout u-similar-container u-container-layout-2">
+                <span class="u-custom-item u-file-icon u-icon u-icon-2" data-href="../index.html">
+                  <img src="../images/3889524.png" title="Log-Out" alt="Log_out_icon">
+                </span>
               </div>
             </div>
             <div class="u-container-style u-list-item u-repeater-item">
-              <div class="u-container-layout u-similar-container u-container-layout-3"><span class="u-custom-item u-file-icon u-icon u-icon-3" data-href="#popup3"><img src="../images/1144760.png" alt=""></span>
+              <div class="u-container-layout u-similar-container u-container-layout-3">
+                <span class="u-custom-item u-file-icon u-icon u-icon-3" data-href="#popup3">
+                  <img src="../images/1144760.png" title="Profile" alt="Profile_icon">
+                </span>
               </div>
             </div>
             <div class="u-container-style u-list-item u-repeater-item">
-              <div class="u-container-layout u-similar-container u-container-layout-4"><span class="u-custom-item u-file-icon u-icon u-icon-4" data-href="#"><img src="../images/2040504.png" alt=""></span>
+              <div class="u-container-layout u-similar-container u-container-layout-4">
+                <span class="u-custom-item u-file-icon u-icon u-icon-4" data-href="#">
+                  <img src="../images/2040504.png" title="settings" alt="setting_icon">
+                </span>
               </div>
             </div>
           </div>
@@ -468,8 +480,8 @@
           
           <div class="u-container-layout u-valign-middle u-container-layout-1">
             <h1 class="u-text u-text-default u-text-1">Announcement </h1>
-            <p class="u-hover-feature u-text u-text-2" data-animation-name="pulse" data-animation-duration="1000" data-animation-direction="">You can share important information here.....</p>
-            
+            <input type="text" class="u-hover-feature u-text u-text-2" data-animation-name="pulse" data-animation-duration="1000" style="border-radius: 10px;" placeholder="You can share important information here....." data-animation-direction=""><br>
+
             <button onclick="window.location.href='#popup1'"  class="u-btn u-btn-round u-button-style u-color-scheme-summer-time u-color-style-multicolor-1 u-palette-2-base u-radius-50 u-btn-1">Publish</button>
           </div>
         </div>
@@ -526,27 +538,7 @@
           </div>
         </div>
         
-        <div id="popup3" class="overlay1">        
-          <div class="popup1">
-            <b><a style="color: #a4123f; font-size: 20px;">Profile</a></b>
-            <a class="close" href="#">×</a> 
-            <div class="content">
-              <img src="../images/7790256.jpg" style="width: 25%; border-radius: 120px; margin-top: 0px; position: absolute; margin-left: 450px;" >
-
-              <br><B>Hello! Mr. Ramaguru Radhakrishnan</b>
-                <br>
-                <b>Assistant Professor </b><br>
-              <b>TIFAC-CORE in Cyber Security<b><br>
-                <b> Amrita School of Computing</b> <br> 
-                <b>Amrita Vishwa Vidyapeetham</b> <br>
-                <b>Coimbatore</b><br>  
-              <br>
-              <b>Mentor for CYBER SECURITY Ist Years</b><br><br>
-              <br>
-              <b>History of Leaves: </b> <b> 0 in this month</b> 
-            </div>
-          </div>
-        </div>
+        
         
         
 
@@ -597,6 +589,27 @@
               </tr>
             </tbody>
           </table>
+        </div>
+      </div>
+      <div id="popup3" class="overlay1">        
+        <div class="popup1">
+          <b><a style="color: #a4123f; font-size: 20px;">Profile</a></b>
+          <a class="close" href="#">×</a> 
+          <div class="content">
+            <img src="../images/7790256.jpg" style="width: 20%; border-radius: 120px; margin-top: 20px; position: absolute; margin-left: 725px;" >
+
+            <br><B>Hello! Mr. Ramaguru Radhakrishnan</b>
+              <br>
+              <b>Assistant Professor </b><br>
+            <b>TIFAC-CORE in Cyber Security<b><br>
+              <b> Amrita School of Computing</b> <br> 
+              <b>Amrita Vishwa Vidyapeetham</b> <br>
+              <b>Coimbatore</b><br>  
+            <br>
+            <b>Mentor for CYBER SECURITY Ist Years</b><br><br>
+            <br>
+            <b>History of Leaves: </b> <b> 0 in this month</b> 
+          </div>
         </div>
       </div>
     </section>
@@ -663,6 +676,26 @@ window.onclick = function(event) {
 } </script>
 
         </div>
+        <div id="popup6" class="overlay6">
+          <div class="popup6">
+            <b><a style="color: #a4123f;font-size: 20px;">Conformation Message</a></b>
+            <a class="close" href="#">×</a>
+            <div class="content">
+              <b style="color: #a4123f;">Are you Sure?</b><br>
+              <button type="submit" class="button-4" data-href="#popup5">Yes</button> 
+              <button type="submit" class="button-3" data-href="#">Cancel</button>
+            </div>
+          </div>
+        </div>
+        <div id="popup5" class="overlay5">
+          <div class="popup5">
+            <b><a style="color: #ffffff;font-size: 20px;">Conformation Message</a></b>
+            <a class="close" href="#">×</a>
+            <div class="content">
+              <b>Rejected.</b> 
+            </div>
+          </div>
+        </div>
         <div id="popup4" class="overlay4">
           <div class="popup4">
             <b><a style="color: #a4123f;font-size: 20px;">Conformation Message</a></b>
@@ -719,6 +752,8 @@ window.onclick = function(event) {
                         <th class="u-align-center u-border-1 u-border-black u-table-cell">Days</th>
                         <th class="u-align-center u-border-1 u-border-black u-table-cell">Reason</th>
                         <th class="u-align-center u-border-1 u-border-black u-table-cell">Status</th>
+                        <th class="u-align-center u-border-1 u-border-black u-table-cell">Action</th>
+
                       </tr>
                     </thead>
                     <tbody class="u-table-body u-table-body-1">
@@ -731,9 +766,9 @@ window.onclick = function(event) {
                         <td class="u-border-1 u-border-grey-30 u-table-cell u-table-cell-14">******</td>
                         <td class="u-border-1 u-border-grey-30 u-table-cell u-table-cell-15">Pending</td>
                         <td class="u-border-1 u-border-grey-30 u-table-cell u-table-cell-15 " >
-                          <img src="../images/4315445.png" onclick="window.location.href='#popup4'" data-href="#popup4" style="cursor:pointer; position: absolute; width: 2%;" alt="Approve">
+                          <img src="../images/4315445.png" onclick="window.location.href='#popup4'" data-href="#popup4" style=" margin-left: 35px; margin-top: 0px; cursor:pointer; position: absolute; width: 2%;" alt="Approve">
                        <br>
-                            <img src="../images/1828843.png" onclick="window.location.href='#popup4'" data-href="#popup4" style="cursor:pointer; position: absolute; width: 2%;" alt="Reject">
+                            <img src="../images/1828843.png" onclick="window.location.href='#popup5'" data-href="#popup6" style=" margin-left: 35px; cursor:pointer; position: absolute; width: 2%;" alt="Reject">
                           </span>
                         </td>
                       </tr>
@@ -746,9 +781,9 @@ window.onclick = function(event) {
                         <td class="u-border-1 u-border-grey-30 u-table-cell u-table-cell-22">******</td>
                         <td class="u-border-1 u-border-grey-30 u-table-cell u-table-cell-23">Pending</td>
                         <td class="u-border-1 u-border-grey-30 u-table-cell u-table-cell-15 " >
-                          <img src="../images/4315445.png" onclick="window.location.href='#popup4'" data-href="#popup4" style="cursor:pointer; position: absolute; width: 2%;" alt="Approve">
+                          <img src="../images/4315445.png" onclick="window.location.href='#popup4'" data-href="#popup4" style=" margin-left: 35px; cursor:pointer; position: absolute; width: 2%;" alt="Approve">
                        <br>
-                            <img src="../images/1828843.png" onclick="window.location.href='#popup4'" data-href="#popup4" style="cursor:pointer; position: absolute; width: 2%;" alt="Reject">
+                            <img src="../images/1828843.png" onclick="window.location.href='#popup5'" data-href="#popup6" style=" margin-left: 35px; cursor:pointer; position: absolute; width: 2%;" alt="Reject">
                           </span>
                         </td>
                       </tr>

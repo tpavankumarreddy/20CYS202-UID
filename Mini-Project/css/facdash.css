@@ -825,7 +825,7 @@
 }
 
 .popup1 {
-  margin: 70px auto;
+  margin: 180px auto;
   padding: 20px;
   background: #fff;
   border-radius: 5px;
@@ -969,3 +969,217 @@
   max-height: 30%;
   overflow: auto;
 } 
+
+/* CSS for publish pop up for leave notifications (reject)*/ 
+.overlay5 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: opacity 0.9;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay5:target {
+  visibility: visible;
+  opacity: 0.9;
+}
+
+
+.popup5 {
+  margin: 70px auto;
+  margin-left: 850px;
+  margin-top: 20px;
+  padding: 20px;
+  background: #f44437;
+  border-radius: 10px;
+  width: 35%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup5 h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup5 .close {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+.popup5 .close:hover {
+  color: black;
+}
+.popup5 .content {
+  max-height: 30%;
+  overflow: auto;
+} 
+
+/*Alert popup*/
+.overlay6 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: opacity 0.9;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay6:target {
+  visibility: visible;
+  opacity: 0.9;
+}
+
+
+.popup6 {
+  margin: 70px auto;
+  margin-left: 850px;
+  margin-top: 20px;
+  padding: 20px;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  width: 35%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup6 h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup6 .close {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+.popup6 .close:hover {
+  color: black;
+}
+.popup6 .content {
+  max-height: 30%;
+  overflow: auto;
+} 
+
+
+
+
+/* CSS */
+.button-3 {
+  appearance: none;
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button-3:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.button-3:hover {
+  background-color: #2c974b;
+}
+
+.button-3:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+
+.button-3:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+
+.button-3:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+
+
+/*css button*/
+
+.button-4 {
+  appearance: none;
+  background-color: #df2525;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button-4:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.button-4:hover {
+  background-color: #df2525;
+}
+
+.button-4:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+
+.button-4:disabled {
+  background-color: #df2525;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+
+.button-4:active {
+  background-color: #df2525;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
