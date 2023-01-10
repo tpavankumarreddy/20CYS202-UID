@@ -5,22 +5,34 @@ function auth() {
 
     if (username === "admin" && password ==="root") {
       alert("You have successfully logged in.");           
-      window.open("html/admin.html");
+      window.open('html/admin.html');
     }
 
-    else if (username === "student" && password ==="password") {
+    else if (username === "pavan" && password ==="cys080") {
       alert("You have successfully logged in."); 
-      window.open("html/studash.html");
+      window.open("html/studash - Pavan.html");
       return false;
     }
 
-    else if (username === "faculty" && password ==="123abc") {
+    else if (username === "rohith" && password ==="cys013") {
       alert("You have successfully logged in."); 
-      window.open("html/facdash.html");
+      window.open("html/studash - Rohith.html");
       return false;
     }
 
-    else if (username === "hod" && password ==="123456789") {
+    else if (username === "sudipt" && password ==="cys075") {
+      alert("You have successfully logged in."); 
+      window.open("html/studash - Sudipt.html");
+      return false;
+    }
+
+    else if (username === "ramaguru" && password ==="123abc") {
+      alert("You have successfully logged in."); 
+      window.open("html/facdash - Ramaguru.html");
+      return false;
+    }
+
+    else if (username === "sethumadhavan" && password ==="123456789") {
       alert("You have successfully logged in."); 
       window.open("html/hod.html");
       return false;
