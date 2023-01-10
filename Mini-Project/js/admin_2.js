@@ -12,11 +12,12 @@ function select() {
 
 
    
-    if ( a==="2" && b==="btech" && c==="cys" && d=== "3" && e==="a") {
+    if ( a==="2" && b==="btech" && c==="cys") {
         x.style.display = "block";
+        y.style.display = "none";
     }
 
-    else if (a==="1" && b==="btech" && c==="cys" && d=== "1" && e==="a") {
+    else if (a==="1" && b==="btech" && c==="cys") {
         y.style.display = "block";
     }
     
