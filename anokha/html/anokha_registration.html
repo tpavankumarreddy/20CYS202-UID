@@ -112,7 +112,7 @@ Description: Anokha Registration Pages -->
 
 				<tr>
 					<td>
-						Name
+						Name *
 					</td>
 					<td>
 						<input type="text" id="name" name="name" minlength="4" 
@@ -123,7 +123,7 @@ Description: Anokha Registration Pages -->
 					
 				<tr>
 					<td>
-						Gender 
+						Gender * 
 					</td>
 					<td>
 						<input required type="radio" id="male" name="gen" value="Male">
@@ -157,7 +157,7 @@ Description: Anokha Registration Pages -->
 
 				<tr>
 					<td>
-						Email ID :
+						Email ID *
 					</td>
 					<td>
 						<input type="email" name="email" 
@@ -167,7 +167,7 @@ Description: Anokha Registration Pages -->
 
 				<tr>
 					<td>
-						Password 
+						Password *
 					</td>
 					<td>
 						<input type="text" name="pass" id="pass" 
@@ -177,17 +177,17 @@ Description: Anokha Registration Pages -->
 
 				<tr>
 					<td>
-						Confirm Password
+						Confirm Password *
 					</td>
 					<td>
 						<input type="password" name="c_pass" id="c_pass" 
-						class="tb" required placeholder="Confirm password"> 
+						class="tb" onblur="passwordValidation()" required placeholder="Confirm password"> 
 					</td>
 				</tr>
 
 				<tr>
 					<td>
-						College Name
+						College Name *
 					</td>
 					<td>
 						<input type="text" name="Uname" minlength="10s"
@@ -198,10 +198,13 @@ Description: Anokha Registration Pages -->
 
 				<tr>
 					<td>
-						Your Degree
+						Your Degree *
 					</td>
 					<td>  
-						<select class="tb2" name="degree" id="degree">
+						<select onblur="degValidation()" class="tb2" name="degree" id="degree">
+							<option value="blank">
+								
+							</option>
 							<option value="btech">
 								B-TECH
 							</option>
@@ -231,10 +234,13 @@ Description: Anokha Registration Pages -->
 				</tr>
 				<tr>
 					<td>
-						Your Branch
+						Your Branch *
 					</td>
 					<td>  
-						<select class="tb2" name="branch" id="branch">
+						<select class="tb2" onblur="branchValidation()" name="branch" id="branch">
+							<option value="blank">
+								
+							</option>
 							<option value="aie">
 								AIE
 							</option>
@@ -265,7 +271,7 @@ Description: Anokha Registration Pages -->
 
 				<tr>
 					<td>
-						Languages you are proficient with
+						Languages you are proficient with *
 					</td>
 					<td>
 						<input name="language" type="checkbox" 
@@ -289,7 +295,7 @@ Description: Anokha Registration Pages -->
 						Tell us more
 					</td>
 					<td>
-						<textarea required id="intro" name="intro" rows="4" 
+						<textarea id="intro" name="intro" rows="4" 
 						cols="50" class="tb1" 
 						placeholder="Introduce your technical skills briefly"></textarea>
 					</td>
@@ -300,7 +306,7 @@ Description: Anokha Registration Pages -->
 						Tell us more
 					</td>
 					<td>
-						<textarea required id="add" name="add" rows="2" cols="50" 
+						<textarea id="add" name="add" rows="2" cols="50" 
 						class="tb3" placeholder="Your address"></textarea>
 					</td>
 				</tr>
@@ -365,15 +371,36 @@ Description: Anokha Registration Pages -->
 					function myFunction() {
 						document.getElementById("reset").reset();
 					}
-					function inputValidate() {
 
+					function passwordValidation() {
 						var pass = document.getElementById('pass').value;
 						var c_pass = document.getElementById('c_pass').value;
 						if (pass != c_pass) {
 							alert("Passwords do not match.");
 							return false;
 						}
+					}
 
+					function degValidation() {
+							var deg = document.getElementById('degree').value;
+							if (deg === 'blank') {
+								alert('degree can\'t be blank');
+								return false;
+							}
+						}
+					
+						function branchValidation() {
+							var br = document.getElementById('branch').value;
+							if (br === 'blank') {
+								alert('branch can\'t be blank');
+								return false;
+							}
+						}
+
+
+					function inputValidate() {
+
+						
 						name = document.forms[0].name.value;
 						alert("Hello! "+ name +" Your Registration is Successfull. Now try logging-in...");
 
